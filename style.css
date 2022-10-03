@@ -23,6 +23,7 @@ html body{
      "sidebar main main main main"
      "sidebar main main main main";
      grid-template-columns: 18% repeat(4 , 20.5%);
+     grid-template-rows: 1fr repeat(4, 1fr);
     
 }
 .sidebar {
@@ -99,10 +100,12 @@ html body{
 .bell{
     height: 2rem;
     width: 2rem;
+    cursor: pointer;
 }
 .profile-container > p{
     font-size: 1.2rem;
     font-weight: bold;
+    cursor: pointer;
 }
 .welcome-container{
     margin: 1rem 0;
@@ -113,15 +116,42 @@ html body{
 }
 .pfp-big{
     border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
+    height: 6rem;
+    width: 6rem;
     cursor: pointer;
 }
 .welcome-text-container{
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+.main-user-name{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.topbar-icons{
+    grid-area: 2/2/3/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.topbar-button{
+    border-radius: 20px;
+    box-shadow: none;
+    background-color: #2b85eb;
+    width: 6.4rem;
+    height: 2.4rem;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
 .main {
     grid-area: main;
-    border: black solid 5px;
+    
+    background-color: #e4ddf4;
 }
