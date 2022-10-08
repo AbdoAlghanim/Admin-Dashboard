@@ -216,6 +216,10 @@ h3{
 }
 .card-icons{
     grid-area: 4/2/4/4;
+    
+}
+.card-icons img{
+    cursor: pointer;
 }
 .announcement-title{
     grid-area: 1/2/2/4;
